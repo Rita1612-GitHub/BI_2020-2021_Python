@@ -1,10 +1,25 @@
-a = int(input())
-b = str(input())
-c = int(input())
-if b == '+': d=a+c
-if b == "-": d=a-c
-if b == "*": d=a*c
-if (b == "/") and (c==0):
-    print('Деление на ноль!')
-if b == "/": d=a/c
-print(d)
+#Enter numbers and operator
+number1 = float(input('Enter the first number: '))
+operator = input('Enter the operator: ')
+number2 = float(input('Enter the second number: '))
+#Checking
+if operator == "+":
+    print(number1 + number2)
+elif operator == "-":
+    print(number1 - number2)
+elif operator == "*":
+    print(number1 * number2)
+elif operator == "/":
+    if number2 != 0: #Check devision by zero
+        print(number1 / number2)
+    else:
+        print("Division by zero!")
+elif operator == "**":
+    print(number1 ** number2)
+elif operator == " % ":
+    print(number1 % number2)
+elif operator == "//":
+    print(number1 // number2)
+else:
+    print("Wrong operator")
+
