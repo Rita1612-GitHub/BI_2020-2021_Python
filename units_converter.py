@@ -35,3 +35,4 @@ else:
     if mera1 == "пядь":
         output = number * 0.1778
         print(round(output, 4))
+print('Добавила другую строчку')
