@@ -10,7 +10,7 @@ elif operator == "-":
 elif operator == "*":
     print(number1 * number2)
 elif operator == "/":
-    if number2 != 0:# Check devision by zero
+    if number2 != 0:
         print(number1 / number2)
     else:
         print("Division by zero!")
